@@ -1,91 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KIMDABIN</title>
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-
-    <style>
-        .font a {
-            margin-left: 10px;
-            margin-right: 10px;
-            font-size: 17px;
-            color: #717784;
-            text-decoration: none;
-            font-family: "Sora", Sans-Serif;
-        }
-
-        .title {
-            font-family: "Montserrat", sans-serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-        }
-
-        .aboutMe {
-            background-color: #eeeeee;
-            border-radius: 20px;
-            margin-top: 40px;
-            margin-bottom: 50px;
-            padding: 50px;
-            width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 200%;
-        }
-
-        .aboutMe img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        
-        @media (max-width: 768px) {
-            .font a {
-                margin: 10px 0;
-                font-size: 16px;
-            }
-
-            .aboutMe {
-                width: 90%;
-                padding: 20px;
-            }
-
-            .title h1 {
-                font-size: 24px;
-                padding: 0 10px;
-            }
-        }
-
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body style="margin: 0px; height:100%; background-color: rgb(255, 254, 254);">
-    <br><br><hr style="border:0; height:2px; background: #000;">
-    <div style="text-align: center;"><br>
-        <div class="font">
-            <a href="index.html">HOME</a> 
-            &nbsp;&nbsp;<a href="ABOUT.html">ABOUT ME</a>
-            &nbsp;&nbsp;<a href="GEST.html">GEST</a>
-        </div>
+<body>
 
-        <br>
-        <div class="title">
-            <div style="text-align: center;">
-                <h1>"HELLO , I'M DABIN"</h1>
-               
+    <nav class="navigator">
+        <div class="navbar-logo">
+            <a href="index.html"><img src="resources/me1.jpg" width="240px";></a>
+        </div>
+        <ul class="navbar-menu">
+            <li class="menu-about" id="menu-about"><a href="#about">ABOUT</a></li>
+            <li class="menu-goal" id="menu-goal"><a href="#goal">GOAL</a></li>
+            <li class="all-content" id="all-content"><a href="#home">CONTACT</a></li>    
+            <li class="all-content" id="all-content"><a href="MAIN.html">NEW hp</a></li>    
+        </ul>
+    </nav>
+    <div class="all-content" id="home">
+        <div class="content">
+            <div class="home">
+                <h1><span id="dynamic" class="text"></span><span class="cursor">l</span></h1>
+                <br>
+                <img class="face" src="resources/memo.png">
+                <a href="#"><img class="go" id="go" src="resources/go.png"></a>
+                <script src="resources/goScroll.js"></script>
             </div>
         </div>
+        <div class="content2" id="content2">
+            <div class="about" id="about">
+                <h2>ABOUT</h2>
+                <div class="profile">
+                    <div class="profile-content">
+                        <img src="resources/memo.png" alt="profile">
+                        <h3>KIM</h3><h4>DA BIN</h4>
+                        <p>📞 010.9741.4677</p>
+                        <p>kimdb1213@gmail.com</p>
+                        
+                    </div>
+                    <div class="profile-content2">
+                        <h3>EDUCATION</h3><br><p>대전보건대학교 컴퓨터 정보과</p><br><p class="number">2024~재학중</p><br><br><br><br><br><br>
+                        <h3>LIKE</h3><br><p>영화보기</p><p>여행다니기</p><p>맛있는 거 먹기</p><br></p>
+                        <div class="channels">   
+                    </div>
+                    </div>
+                    <div class="profile-content2">
+                        <h3>SKILL</h3><br><p>Java / Javascript </p><p>c++</p><br><br><br><br><br><br><br>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="goal" id="goal">
+                <h2>GOAL</h2>
+                <div class="goal-boxes1">
+                    <ul class="goal-boxes" id="goal-boxes">
+                        <li class="goal-box" id="goal-box">
+                            <h3>자격증 따기</h3><br>
+                            <img src="resources/1.png">
+                            <p>- 정보처리산업기사<br>- SQLD<br>- OCP</p>
+                        </li>
+                        <li class="goal-box">
+                            <h3>진로찾기</h3><br>
+                            <img src="resources/good.png">
+                            <p>곧 3학년이니<br>취업을 하기 전<br>원하는 방향찾기 + 공부도 열심히..</p>
+                        </li>
+                        <li class="goal-box">
+                            <h3>여행 많이 다니기</h3><br>
+                            <img src="resources/2.png">
+                            <p><br>여행을 좋아해서<br>세계여행 해보는게 꿈</p>
+                        </li>
+                        
+                        
 
-        <div class="aboutMe">
-            <img src="dabin.jpg" width="100%" height="20%">
+                    </ul>
+                </div>
+
+
+            </div>
         </div>
-
-        <hr style="border:0; height:2px; background: #000; margin-top:20px;">
-   
     </div>
+   
+    </a>
+    <footer class="contact" id="contact">
+        <div class="contact-content">
+          
+            <a href="https://github.com/dabin1213" target="blank"><img src="resources/git.png" alt=""></a>
+         
+        </div>
+        <div class="contact-logo">
+            <a href="#home"><img src="resources/me1-Photoroom.png" alt="me"></a>
+        </div>
+        <button id="back-to-top">Top</button>
+    </footer>
+    <script src = "resources/typing.js"></script>
+    <script src = "resources/backToTop.js"></script>
+    <script src = "resources/slide.js"></script>
 </body>
 </html>
